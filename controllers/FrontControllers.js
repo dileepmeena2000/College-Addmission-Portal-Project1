@@ -157,6 +157,19 @@ class FrontController {
     //console.log(info);
   };
 
+  // static verifyMail = async (req, res) => {
+  //   try {
+  //     const updateinfo = await UserModel.findByIdAndUpdate(req.query.id, {
+  //       is_verify: 1,
+  //     });
+  //     if (updateinfo) {
+  //       res.redirect("/home");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
   static verifyMail = async (req, res) => {
     try {
       const updateinfo = await UserModel.findByIdAndUpdate(req.query.id, {

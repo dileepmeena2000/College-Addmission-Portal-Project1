@@ -40,7 +40,7 @@ route.post("/update_status/:id",checkAuth,adminRole('admin'),AdminController.upd
 route.get("/admin/profile", checkAuth, adminRole('admin'), AdminController.profile);
 route.post("/admin/updateProfile",checkAuth,adminRole('admin'),AdminController.updateProfile);
 route.get("/admin/password", checkAuth, adminRole('admin'), AdminController.password);
-route.post("/admin/Password",checkAuth,adminRole('admin'),AdminController.changePassword);
+route.post("/admin/password",checkAuth,adminRole('admin'),AdminController.changePassword);
 route.get("/admin/contactDisplay",checkAuth,adminRole('admin'),AdminController.contactDisplay);
 
 // verifylogin

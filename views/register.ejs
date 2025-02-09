@@ -76,7 +76,8 @@
                     type="text"
                     class="form-control"
                     id="name"
-                    name="name"
+                    name="name" 
+                    required
                   />
                 </div>
 
@@ -88,6 +89,7 @@
                     class="form-control"
                     id="email"
                     name="email"
+                    required
                   />
                 </div>
 
@@ -95,12 +97,8 @@
 
                 <div class="mb-1">
                   <label for="password" class="form-label">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    name="password"
-                  />
+                  <input name="password" id="password" class="form-control" type="password" placeholder="Enter your Password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                          title="Password must be at least 8 characters long, contain an uppercase letter, a lowercase letter, a number, and a special character."  required />
                 </div>
 
                 <!-- confirm password -->
